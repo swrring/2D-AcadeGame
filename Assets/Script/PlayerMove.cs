@@ -17,6 +17,7 @@ public class PlayerMove : MonoBehaviour
         rigid = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        
     }
     void FixedUpdate()
     {
@@ -58,7 +59,7 @@ public class PlayerMove : MonoBehaviour
         
         
     }
-    private void Update()
+    void Update()
     {
         //점프 
         if (Input.GetButtonDown("Jump") && !anim.GetBool("isJumping"))
@@ -97,5 +98,25 @@ public class PlayerMove : MonoBehaviour
         }
         
     }
-    
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.collider.tag == "Enemy")
+        {
+            onDamaged(other.transform.position);
+        }
+    }
+    void onDamaged(Vector2 posion)
+    {
+        gameObject.layer = 11;
+        sprite.color = new Color(1, 1, 1, 0.4f);
+        int dirc = transform.position.x - posion.x > 0 ? 1 : -1;
+        rigid.AddForce(new Vector2(dirc, 1)*7, ForceMode2D.Impulse);
+        anim.SetTrigger("Hit");
+        Invoke("offDamaged", 2);
+    }
+    void offDamaged()
+    {
+        gameObject.layer = 10;
+        sprite.color = new Color(1, 1, 1 ,1);
+    }
 }
