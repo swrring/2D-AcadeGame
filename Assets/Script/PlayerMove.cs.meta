@@ -3,7 +3,14 @@ guid: bcec4ffd682069943a876ccef84c2604
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - maneger: {instanceID: 0}
+  - attacksound: {instanceID: 0}
+  - jumpsound: {instanceID: 0}
+  - itemsound: {instanceID: 0}
+  - diesound: {instanceID: 0}
+  - hitsound: {instanceID: 0}
+  - finishsound: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
