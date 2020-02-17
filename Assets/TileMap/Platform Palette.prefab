@@ -41,6 +41,24 @@ Tilemap:
   m_GameObject: {fileID: 8079120377834482619}
   m_Enabled: 1
   m_Tiles:
+  - first: {x: 0, y: -4, z: 0}
+    second:
+      m_TileIndex: 18
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 2
+      m_ColliderType: 1
+  - first: {x: 2, y: -4, z: 0}
+    second:
+      m_TileIndex: 17
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 2
+      m_ColliderType: 1
   - first: {x: 0, y: -2, z: 0}
     second:
       m_TileIndex: 14
@@ -230,14 +248,18 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: dcbe5ab9532ff874b8ce85629929c2ff, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 837d467a7e907d14fb2eeb08c4b659fb, type: 2}
-  m_TileSpriteArray:
   - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: afc75afc6bf566549a50f5cc978ef098, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: a6a125d06fe11334980c5919695f4c10, type: 2}
+  m_TileSpriteArray:
+  - m_RefCount: 2
     m_Data: {fileID: 21300058, guid: a0441e770c63d514497b92c4110cdf6b, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300060, guid: a0441e770c63d514497b92c4110cdf6b, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300062, guid: a0441e770c63d514497b92c4110cdf6b, type: 3}
-  - m_RefCount: 1
+  - m_RefCount: 2
     m_Data: {fileID: 21300068, guid: a0441e770c63d514497b92c4110cdf6b, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300066, guid: a0441e770c63d514497b92c4110cdf6b, type: 3}
@@ -266,7 +288,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 21300090, guid: a0441e770c63d514497b92c4110cdf6b, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 17
+  - m_RefCount: 19
     m_Data:
       e00: 1
       e01: 0
@@ -285,7 +307,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 17
+  - m_RefCount: 19
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}

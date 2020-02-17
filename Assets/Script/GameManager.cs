@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour
         else
         {
             UI_hp[0].color = new Color(1, 1, 1, 0.3f);
-            player.onDie();
+            player.OnDie();
             UI_button.SetActive(true);
         }    
     }
